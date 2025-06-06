@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import { solveSudoku, solveSudokuWithSteps, SudokuGrid, SolveStep } from "../lib/sudokuSolver";
+import { solveSudoku, solveSudokuWithSteps, SudokuGrid } from "../lib/sudokuSolver";
 
 export default function Page() {
   const [board, setBoard] = useState<number[][]>(

@@ -73,6 +73,6 @@ export function solveSudokuWithSteps(board: SudokuGrid): SolveStep[] {
     return true;
   }
 
-  backtrack();
-  return steps;
+  const solved = backtrack();
+  return solved ? steps : [];
 }
